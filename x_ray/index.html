@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://mice365.com/x_ray/assets/style.css">
+    <link rel="stylesheet" href="https://mice365.com/assets/css/main.css" />
+    <script src="https://mice365.com/x_ray/assets/bundle.js"></script>
+    <title>x-ray detection</title>
+</head>
+<body>
+    <section class="box">
+        <h3>X-ray detect</h3>
+        <div class="row">
+            <section class="content col-12 col-12-mobilep">
+                <div class="text_content">
+                    <input type="file" id="image" accept="image/*">
+                    <p>or run the example: </p>
+                    <form>
+                        <select name="language" id="selected_image">
+                          <option value="none">=== Select image ===</option>
+                          <option value="normal1">정상 예시 1</option>
+                          <option value="normal2">정상 예시 2</option>
+                          <option value="normal3">정상 예시 3</option>
+                          <option value="notnormal1" >폐렴 예시 1</option>
+                          <option value="notnormal2">폐렴 예시 2</option>
+                          <option value="notnormal3">폐렴 예시 3</option>
+                        </select>
+                      </form>
+                    <input type="button" id="example_button" class="button primary " value="See example">
+                </div>
+                <div class="image_content">
+                    <img src="" alt="" id="imageContainer" />
+                </div>
+                <div class="class_content">
+                    <img src="https://mice365.com/x_ray/assets/loading.gif" alt="" id="loadingGif">
+                </div>
+                <div class="canvas_content">
+                    <canvas height="200", width="200" id="activation_canvas">
+                    </canvas>
+                </div>
+                <div>
+                    <p id="display_result" class="button alt"> Result</p>
+                    <p><h4 id="displayResult2">Explanation</h4></p>
+                </div> 
+                
+            </section>
+        </div>
+    </section>
+</body>
+</html>
